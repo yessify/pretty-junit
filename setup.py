@@ -18,10 +18,11 @@ setuptools.setup(
     version="0.0.1",
     author="Dinesh RVL",
     author_email="dinesh.rvl90@gmail.com",
-    entry_points='''
-        [console_scripts]
-        pretty-junit=pretty-junit.__main__:main
-    '''
+    entry_points={
+    'console_scripts': [
+        'pretty-junit=convert:generate_html',
+    ]
+	},
     description="Library that converts junit xml into smart HTML Reports",
     long_description="Library that converts junit xml into smart HTML Reports",
     long_description_content_type="text/markdown",

@@ -3,7 +3,7 @@ import glob
 import json
 import os
 
-def generate_html(path,reportname):
+def generate_html(path,reportname="Test Summary"):
     count = 0
     passCount = 0
     failCount = 0
