@@ -14,13 +14,13 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="pretty-junit",
+    name="prettyjunit",
     version="0.0.1",
     author="Dinesh RVL",
     author_email="dinesh.rvl90@gmail.com",
     entry_points={
     'console_scripts': [
-        'pretty-junit=convert:generate_html',
+        'prettyjunit=prettyjunit.convert:generate_html',
     ]
 	},
     description="Library that converts junit xml into smart HTML Reports",
